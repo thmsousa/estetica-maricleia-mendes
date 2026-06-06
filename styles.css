@@ -729,10 +729,10 @@ header.scrolled {
 }
 
 .service-price {
-    font-family: var(--font-body);
-    font-weight: 500;
+    font-family: var(--font-heading);
+    font-weight: 600;
     color: var(--color-primary-dark);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .service-more-link {
@@ -913,7 +913,7 @@ header.scrolled {
         padding: 0.85rem 1.5rem !important;
     }
     .modal-footer .service-price {
-        font-size: 1.1rem !important;
+        font-size: 1.25rem !important;
     }
 }
 
