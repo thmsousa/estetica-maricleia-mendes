@@ -879,42 +879,48 @@ header.scrolled {
 }
 
 @media (max-width: 576px) {
+    .modal-content {
+        width: 92% !important;
+    }
     .modal-body {
-        padding: 1.5rem 1.25rem;
+        padding: 1.25rem 1rem;
     }
     .modal-header-img {
-        height: 160px !important;
+        height: 130px !important;
     }
     .modal-title {
-        font-size: 1.55rem !important;
-        margin: 1rem 0 0.5rem 0 !important;
+        font-size: 1.4rem !important;
+        margin: 0.75rem 0 0.4rem 0 !important;
     }
     .modal-text {
-        font-size: 0.9rem !important;
-        margin-bottom: 1rem !important;
+        font-size: 0.85rem !important;
+        margin-bottom: 0.75rem !important;
+        line-height: 1.5 !important;
     }
     .modal-benefits {
-        margin-bottom: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
     }
     .modal-benefits-title {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.4rem !important;
+        font-size: 0.8rem !important;
     }
     .modal-benefits-list {
         grid-template-columns: 1fr !important;
-        gap: 0.5rem !important;
+        gap: 0.4rem !important;
     }
     .modal-benefits-list li {
-        font-size: 0.85rem !important;
+        font-size: 0.8rem !important;
     }
     .modal-footer {
-        padding-top: 1rem !important;
+        padding-top: 0.75rem !important;
     }
     .modal-footer .btn {
         width: 100% !important;
-        padding: 0.85rem 1.5rem !important;
+        padding: 0.75rem 1.25rem !important;
+        font-size: 0.8rem !important;
     }
     .modal-footer .service-price {
-        font-size: 1.2rem !important;
+        font-size: 1.1rem !important;
     }
 }
 
