@@ -792,6 +792,8 @@ header.scrolled {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
+    padding: 2rem 1rem;
 }
 
 .modal.active {
@@ -803,7 +805,7 @@ header.scrolled {
     background-color: rgba(250, 247, 242, 0.96);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    width: 90%;
+    width: 100%;
     max-width: 650px;
     border-radius: var(--border-radius-md);
     overflow: hidden;
@@ -813,6 +815,7 @@ header.scrolled {
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: 0 30px 60px rgba(197, 160, 89, 0.15);
     border: 1px solid rgba(197, 160, 89, 0.25);
+    margin: auto;
 }
 
 .modal.active .modal-content {
@@ -850,12 +853,55 @@ header.scrolled {
     padding: 3rem;
 }
 
+/* Ajustes compactos e responsividade para celular */
+@media (max-width: 768px) {
+    .modal {
+        align-items: flex-start;
+        padding: 1.5rem 0.75rem;
+    }
+}
+
 @media (max-width: 576px) {
     .modal-body {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.25rem;
     }
     .modal-header-img {
-        height: 200px !important;
+        height: 160px !important;
+    }
+    .modal-title {
+        font-size: 1.55rem !important;
+        margin: 1rem 0 0.5rem 0 !important;
+    }
+    .modal-text {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .modal-benefits {
+        margin-bottom: 1.25rem !important;
+    }
+    .modal-benefits-title {
+        margin-bottom: 0.5rem !important;
+    }
+    .modal-benefits-list {
+        grid-template-columns: 1fr !important;
+        gap: 0.5rem !important;
+    }
+    .modal-benefits-list li {
+        font-size: 0.85rem !important;
+    }
+    .modal-footer {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding-top: 1rem !important;
+    }
+    .modal-footer .service-price {
+        font-size: 1.1rem !important;
+    }
+    .modal-footer .btn {
+        width: 100% !important;
+        padding: 0.85rem 1.5rem !important;
     }
 }
 
