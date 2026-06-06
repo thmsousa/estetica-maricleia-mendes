@@ -672,6 +672,11 @@ header.scrolled {
     height: 250px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
+}
+
+.service-img-wrapper > * {
+    pointer-events: none;
 }
 
 .service-img-wrapper img {
